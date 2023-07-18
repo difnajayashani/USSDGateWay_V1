@@ -60,6 +60,9 @@ public class USSDRestServiceImpl implements  USSDRestService {
             subMenuNode_01.setTag("SN_01");
             subMenuNode_01.setDescription("Sub Menu 01");
             subMenuNode_01.setAttributeList(dataSet);
+
+            requestDao.save(request);
+
             response.setResponse_Message(subMenuNode_01);
 
         }else if("2".equals(request.getInput())){
@@ -78,6 +81,9 @@ public class USSDRestServiceImpl implements  USSDRestService {
             subMenuNode_02.setTag("SN_02");
             subMenuNode_02.setDescription("Sub Menu 02");
             subMenuNode_02.setAttributeList(dataSet);
+
+            requestDao.save(request);
+
             response.setResponse_Message(subMenuNode_02);
 
         }else if("3".equals(request.getInput())){
@@ -94,6 +100,9 @@ public class USSDRestServiceImpl implements  USSDRestService {
             exitNode.setTag("EN");
             exitNode.setDescription("EXIT");
             exitNode.setAttributeList(dataSet);
+
+            requestDao.save(request);
+
             response.setResponse_Message(exitNode);
 
         }else{
@@ -110,6 +119,9 @@ public class USSDRestServiceImpl implements  USSDRestService {
             invalidNode.setTag("IN");
             invalidNode.setDescription("INVALID");
             invalidNode.setAttributeList(dataSet);
+
+            requestDao.save(request);
+
             response.setResponse_Message(invalidNode);
 
         }
