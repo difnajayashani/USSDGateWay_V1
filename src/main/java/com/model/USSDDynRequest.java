@@ -23,6 +23,10 @@ public class USSDDynRequest {
     private String MSC;
     private Date timeStamp;
     private String input;
+    private String New_Request;
+    private String Session_Id;
+    private String status;
+    private String requestLayer;
 
 
 

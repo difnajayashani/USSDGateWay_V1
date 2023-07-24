@@ -6,6 +6,9 @@ import com.model.USSDDynRequest;
 import com.model.USSDDynResponse;
 import com.service.USSDRestServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -15,39 +18,62 @@ public class RestTempController {
     @Autowired
     USSDRestServiceImpl service;
 
-  /**  @GetMapping("/{userid}/{password}/{MSISDN}/{MSC}/{input}")
-    public USSDDynResponse testControllerMethod(@PathVariable String userid,
-                                                @PathVariable String password,
-                                                @PathVariable String MSISDN,
-                                                @PathVariable String MSC,
-                                                @PathVariable String input){
-        USSDDynRequest request=new USSDDynRequest();
-        request.setRequestId("1");
-        request.setUserid(userid);
-        request.setPassword(password);
-        request.setMSISDN(MSISDN);
-        request.setMSC(MSC);
-        request.setInput(input);
-
-        return service.testRequest(request);
-    }**/
-
     @GetMapping("/normalRequest")
-    public USSDDynResponse testControllerMethod(@RequestParam("userid")String userid,@RequestParam("password")String password,
-                                                @RequestParam("MSISDN")String MSISDN,@RequestParam("MSC")String MSC,
-                                                @RequestParam("input")String input){
+    public ResponseEntity<String> getControllerMethod(@RequestParam("userid")String userid, @RequestParam("password")String password,
+                                                       @RequestParam("MSISDN")String MSISDN, @RequestParam(value = "MSC",required = false)String MSC,
+                                                       @RequestParam(value = "input",required = false)String input,
+                                                       @RequestParam("Session_Id")String Session_Id,
+                                                       @RequestParam(value = "New_Request",required = false)String New_Request,
+                                                       @RequestParam(value = "status",required = false)String status,
+                                                       @RequestParam(value = "clean",required = false)String clean,
+                                                       @RequestParam(value = "error_tag",required = false)String error_tag){
 
-        USSDDynRequest request=new USSDDynRequest();
-        request.setUserid(userid);
-        request.setPassword(password);
-        request.setMSISDN(MSISDN);
-        request.setMSC(MSC);
-        request.setInput(input);
 
-        return service.testNormalRequest(request);
+
+        USSDDynResponse response= service.testNormalRequest2(userid,password,MSISDN,MSC,input,Session_Id,New_Request,status,clean,error_tag);
+
+        String amount=response.getAmount();
+        String charge=response.getCharge();
+        String freeFlow= response.getFreeflow();
+
+        HttpHeaders headers = new HttpHeaders();
+       // headers.add("Content-Length", "20");
+
+        headers.add("Freeflow", freeFlow);
+        headers.add("charge", charge);
+        headers.add("amount",amount );
+
+        return new ResponseEntity(response.getResponse_Message(), headers, HttpStatus.CREATED);
+
     }
 
-    @GetMapping("/cleanRequest")
+    @PostMapping("/normalRequest")
+    public ResponseEntity<String> postControllerMethod(@ModelAttribute("userid")String userid, @ModelAttribute("password")String password,
+                                         @ModelAttribute("MSISDN")String MSISDN, @ModelAttribute(value = "MSC")String MSC,
+                                         @ModelAttribute(value = "input")String input,
+                                         @ModelAttribute("Session_Id")String Session_Id,
+                                         @ModelAttribute(value = "New_Request")String New_Request,
+                                         @ModelAttribute(value = "status")String status,
+                                         @ModelAttribute(value = "clean")String clean,
+                                         @ModelAttribute(value = "error_tag")String error_tag)  {
+
+        USSDDynResponse response= service.testNormalRequest3(userid,password,MSISDN,MSC,input,Session_Id,New_Request,status,clean,error_tag);
+
+        String amount=response.getAmount();
+        String charge=response.getCharge();
+        String freeFlow= response.getFreeflow();
+
+        HttpHeaders headers = new HttpHeaders();
+        // headers.add("Content-Length", "20");
+
+        headers.add("Freeflow", freeFlow);
+        headers.add("charge", charge);
+        headers.add("amount",amount );
+
+        return new ResponseEntity(response.getResponse_Message(), headers, HttpStatus.CREATED);
+    }
+
+   /** @GetMapping("/cleanRequest")
     public CleanUpResponse testCleanRequestMethod(@RequestParam("userid")String userid, @RequestParam("password")String password,
                                                 @RequestParam("MSISDN")String MSISDN, @RequestParam("clean")String clean,
                                                 @RequestParam("status")String status){
@@ -60,7 +86,7 @@ public class RestTempController {
         request.setStatus(status);
 
         return service.testCleanRequest(request);
-    }
+    }**/
 
 
 

@@ -10,10 +10,10 @@
     </parent>
     <groupId>com.example</groupId>
     <artifactId>ussdgateway_api</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <packaging>war</packaging>
-    <name>demo1</name>
-    <description>demo1</description>
+    <version>V1</version>
+    <packaging>jar</packaging>
+    <name>demo5</name>
+    <description>demo5</description>
     <properties>
         <java.version>11</java.version>
     </properties>

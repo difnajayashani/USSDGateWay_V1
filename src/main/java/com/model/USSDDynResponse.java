@@ -11,14 +11,14 @@ import java.util.List;
 
 
 @Data
-public class USSDDynResponse  implements Serializable{
+public class USSDDynResponse{
 
-    @Id
-    private Long id;
+   // @Id
+    //private Long id;
     private String Freeflow;
     private String charge;
-    private int amount;
-    private Node Response_Message;
+    private String amount;
+    private String Response_Message;
    // List<String> addresses = new ArrayList<String>();
 
 
