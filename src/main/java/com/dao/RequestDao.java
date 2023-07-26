@@ -9,11 +9,11 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-@Repository
+/**@Repository
 public interface RequestDao extends CrudRepository<USSDDynRequest, String> {
 
-    @Modifying
+   /** @Modifying
     @Query("select r from USSDDynRequest r where r.Session_Id = :sessionId order by  r.id desc")
     public List<USSDDynRequest> searchBySessionId(@Param("sessionId") String sessionId);
 
-}
+}**/

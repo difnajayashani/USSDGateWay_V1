@@ -1,6 +1,6 @@
 package com.service;
 
-import com.dao.RequestDao;
+//import com.dao.RequestDao;
 import com.model.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
@@ -18,8 +18,8 @@ import java.util.List;
 @Service
 public class USSDRestServiceImpl implements  USSDRestService {
 
-    @Autowired
-    private RequestDao requestDao;
+    //@Autowired
+   //private RequestDao requestDao;
 
     public USSDDynResponse testNormalRequest2(String userid,String password,String MSISDN,String MSC,String input,
                                              String Session_Id, String New_Request,String status,String clean,
@@ -43,7 +43,7 @@ public class USSDRestServiceImpl implements  USSDRestService {
             request.setInput(input);
             request.setRequestLayer("1");
 
-            requestDao.save(request);
+           // requestDao.save(request);
 
             String responseMessage="Main Menu\r\n1.Sub Menu 01\r\n2.Sub Menu 02\r\n3.Exit";
             response.setCharge("Y");
@@ -64,10 +64,10 @@ public class USSDRestServiceImpl implements  USSDRestService {
 
         }else {
 
-            List<USSDDynRequest> requestsPerSession= requestDao.searchBySessionId(Session_Id);
-            String currentLayer= requestsPerSession.get(0).getRequestLayer();
-            int currentLayerInt = Integer.parseInt(currentLayer);
-            currentLayerInt++;
+          //  List<USSDDynRequest> requestsPerSession= requestDao.searchBySessionId(Session_Id);
+           // String currentLayer= requestsPerSession.get(0).getRequestLayer();
+            //int currentLayerInt = Integer.parseInt(currentLayer);
+            //currentLayerInt++;
 
             switch (input){
 
@@ -80,9 +80,9 @@ public class USSDRestServiceImpl implements  USSDRestService {
                     request.setMSC(MSC);
                     request.setSession_Id(Session_Id);
                     request.setInput(input);
-                    request.setRequestLayer( Integer.toString(currentLayerInt));
+                    //request.setRequestLayer( Integer.toString(currentLayerInt));
 
-                    requestDao.save(request);
+                   // requestDao.save(request);
 
                     response.setCharge("Y");
                     response.setAmount("100");
@@ -100,9 +100,9 @@ public class USSDRestServiceImpl implements  USSDRestService {
                     request.setMSC(MSC);
                     request.setSession_Id(Session_Id);
                     request.setInput(input);
-                    request.setRequestLayer( Integer.toString(currentLayerInt));
+                   // request.setRequestLayer( Integer.toString(currentLayerInt));
 
-                    requestDao.save(request);
+                   // requestDao.save(request);
 
                     response.setCharge("Y");
                     response.setAmount("100");
@@ -121,9 +121,9 @@ public class USSDRestServiceImpl implements  USSDRestService {
                     request.setMSC(MSC);
                     request.setSession_Id(Session_Id);
                     request.setInput(input);
-                    request.setRequestLayer( Integer.toString(currentLayerInt));
+                   // request.setRequestLayer( Integer.toString(currentLayerInt));
 
-                    requestDao.save(request);
+                   // requestDao.save(request);
 
                     String responseMessage3="EXIT";
                     response.setCharge("Y");
@@ -166,7 +166,7 @@ public class USSDRestServiceImpl implements  USSDRestService {
             request2.setInput(input);
             request2.setRequestLayer("1");
 
-            requestDao.save(request2);
+           // requestDao.save(request2);
 
             String responseMessage="Main Menu\r\n1.Sub Menu 01\r\n2.Sub Menu 02\r\n3.Exit";
             response.setCharge("Y");
@@ -187,10 +187,10 @@ public class USSDRestServiceImpl implements  USSDRestService {
 
         }else {
 
-            List<USSDDynRequest> requestsPerSession= requestDao.searchBySessionId(Session_Id);
-            String currentLayer= requestsPerSession.get(0).getRequestLayer();
-            int currentLayerInt = Integer.parseInt(currentLayer);
-            currentLayerInt++;
+            //List<USSDDynRequest> requestsPerSession= requestDao.searchBySessionId(Session_Id);
+           // String currentLayer= requestsPerSession.get(0).getRequestLayer();
+            //int currentLayerInt = Integer.parseInt(currentLayer);
+           // currentLayerInt++;
 
             switch (input){
 
@@ -203,9 +203,9 @@ public class USSDRestServiceImpl implements  USSDRestService {
                     request2.setMSC(MSC);
                     request2.setSession_Id(Session_Id);
                     request2.setInput(input);
-                    request2.setRequestLayer( Integer.toString(currentLayerInt));
+                   // request2.setRequestLayer( Integer.toString(currentLayerInt));
 
-                    requestDao.save(request2);
+                   // requestDao.save(request2);
 
                     response.setCharge("Y");
                     response.setAmount("100");
@@ -223,9 +223,9 @@ public class USSDRestServiceImpl implements  USSDRestService {
                     request2.setMSC(MSC);
                     request2.setSession_Id(Session_Id);
                     request2.setInput(input);
-                    request2.setRequestLayer( Integer.toString(currentLayerInt));
+                   // request2.setRequestLayer( Integer.toString(currentLayerInt));
 
-                    requestDao.save(request2);
+                   // requestDao.save(request2);
 
                     response.setCharge("Y");
                     response.setAmount("100");
@@ -244,9 +244,9 @@ public class USSDRestServiceImpl implements  USSDRestService {
                     request2.setMSC(MSC);
                     request2.setSession_Id(Session_Id);
                     request2.setInput(input);
-                    request2.setRequestLayer( Integer.toString(currentLayerInt));
+                    //request2.setRequestLayer( Integer.toString(currentLayerInt));
 
-                    requestDao.save(request2);
+                   // requestDao.save(request2);
 
                     String responseMessage3="EXIT";
                     response.setCharge("Y");

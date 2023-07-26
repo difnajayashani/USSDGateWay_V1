@@ -1,6 +1,5 @@
 com\service\USSDRestService.class
 com\exception\CustomExceptionHandler.class
-com\dao\RequestDao.class
 com\model\Node.class
 com\model\USSDDynResponse.class
 com\model\USSDDynMenuResponseDataSet.class

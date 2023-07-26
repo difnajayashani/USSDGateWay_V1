@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="710e3e58-5ec1-4aaf-aa54-60a9f33000c4" name="Changes" comment="updated target folder commit">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dao/RequestDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dao/RequestDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/model/USSDDynRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/model/USSDDynRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/service/USSDRestServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/service/USSDRestServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dao/RequestDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dao/RequestDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/model/USSDDynRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/model/USSDDynRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/service/USSDRestServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/service/USSDRestServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-07-24T13-16-12_000-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.Demo1ApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.Demo1ApplicationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.Demo1ApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.Demo1ApplicationTests.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ussdgateway_api-V1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ussdgateway_api-V1.jar.original" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2S8iOXp4M9F4hFOO3sKqJ2NymnO" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/MOBITEL/Office Applications/USSD Gateway App/LATEST/demo6",
+    "nodejs_package_manager_path": "npm",
+    "spring.configuration.checksum": "e368b9938746fa090d6afd3628355133"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\MOBITEL\Office Applications\USSD Gateway App\LATEST\demo3\src\main\java\com" />
+      <recent name="D:\MOBITEL\Office Applications\USSD Gateway App\LATEST\demo1\src\main\java\com\" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Demo1Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="demo1" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demo.Demo1Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="710e3e58-5ec1-4aaf-aa54-60a9f33000c4" name="Changes" comment="" />
+      <created>1688534578831</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1688534578831</updated>
+      <workItem from="1688534580865" duration="8983000" />
+      <workItem from="1689157906324" duration="17381000" />
+      <workItem from="1689260840024" duration="8059000" />
+      <workItem from="1689347419504" duration="14180000" />
+      <workItem from="1689605278697" duration="4251000" />
+      <workItem from="1689654180388" duration="1992000" />
+      <workItem from="1689689700831" duration="6487000" />
+      <workItem from="1689749578056" duration="23483000" />
+      <workItem from="1689846962456" duration="12241000" />
+      <workItem from="1690182488496" duration="8866000" />
+    </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <created>1689581494348</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1689581494348</updated>
+    </task>
+    <task id="LOCAL-00002" summary="first commit">
+      <created>1689585273070</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1689585273070</updated>
+    </task>
+    <task id="LOCAL-00003" summary="first commit">
+      <created>1689654256140</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1689654256140</updated>
+    </task>
+    <task id="LOCAL-00004" summary="first commit">
+      <created>1689689977133</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1689689977133</updated>
+    </task>
+    <task id="LOCAL-00005" summary="first commit">
+      <created>1689690509045</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1689690509045</updated>
+    </task>
+    <task id="LOCAL-00006" summary="first commit">
+      <created>1689691632286</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1689691632286</updated>
+    </task>
+    <task id="LOCAL-00007" summary="war changed to jar and new post method commit">
+      <created>1690184612835</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1690184612835</updated>
+    </task>
+    <task id="LOCAL-00008" summary="updated target folder commit">
+      <created>1690184857806</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1690184857806</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit" />
+    <MESSAGE value="war changed to jar and new post method commit" />
+    <MESSAGE value="updated target folder commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated target folder commit" />
+  </component>
+</project>
