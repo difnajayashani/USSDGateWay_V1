@@ -32,7 +32,7 @@ public class USSDRestServiceImpl implements  USSDRestService {
         Date date = new Date();
         request.setTimeStamp(date);
 
-        if("New_Request".equals(New_Request)){
+        if("1".equals(New_Request)){
 
             request.setUserid(userid);
             request.setPassword(password);
@@ -155,7 +155,7 @@ public class USSDRestServiceImpl implements  USSDRestService {
         Date date = new Date();
         request2.setTimeStamp(date);
 
-        if("New_Request".equals(New_Request)){
+        if("1".equals(New_Request)){
 
             request2.setUserid(userid);
             request2.setPassword(password);
@@ -177,7 +177,7 @@ public class USSDRestServiceImpl implements  USSDRestService {
 
         }else if("clean".equals(clean)){
 
-            String responseMessage="CLean Request SUCCESS";
+            String responseMessage="Clean Request SUCCESS";
             response.setCharge("Y");
             response.setAmount("100");
             response.setFreeflow("FC");
@@ -185,7 +185,7 @@ public class USSDRestServiceImpl implements  USSDRestService {
 
 
 
-        }else {
+        }else if("0".equals(New_Request)) {
 
             //List<USSDDynRequest> requestsPerSession= requestDao.searchBySessionId(Session_Id);
            // String currentLayer= requestsPerSession.get(0).getRequestLayer();

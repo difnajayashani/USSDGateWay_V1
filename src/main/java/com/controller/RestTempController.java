@@ -21,9 +21,9 @@ public class RestTempController {
     @GetMapping("/normalRequest")
     public ResponseEntity<String> getControllerMethod(@RequestParam("userid")String userid, @RequestParam("password")String password,
                                                        @RequestParam("MSISDN")String MSISDN, @RequestParam(value = "MSC",required = false)String MSC,
-                                                       @RequestParam(value = "input",required = false)String input,
+                                                       @RequestParam(value = "input")String input,
                                                        @RequestParam("Session_Id")String Session_Id,
-                                                       @RequestParam(value = "New_Request",required = false)String New_Request,
+                                                       @RequestParam(value = "New_Request")String New_Request,
                                                        @RequestParam(value = "status",required = false)String status,
                                                        @RequestParam(value = "clean",required = false)String clean,
                                                        @RequestParam(value = "error_tag",required = false)String error_tag){
