@@ -62,7 +62,7 @@ public class USSDRestServiceImpl implements  USSDRestService {
 
 
 
-        }else {
+        }else if("0".equals(New_Request)){
 
           //  List<USSDDynRequest> requestsPerSession= requestDao.searchBySessionId(Session_Id);
            // String currentLayer= requestsPerSession.get(0).getRequestLayer();

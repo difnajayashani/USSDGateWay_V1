@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="710e3e58-5ec1-4aaf-aa54-60a9f33000c4" name="Changes" comment="updated target folder commit">
+    <list default="true" id="710e3e58-5ec1-4aaf-aa54-60a9f33000c4" name="Changes" comment="commited the new_request parameter change">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/RestTempController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controller/RestTempController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/service/USSDRestServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/service/USSDRestServiceImpl.java" afterDir="false" />
@@ -103,7 +103,7 @@
       <workItem from="1689749578056" duration="23483000" />
       <workItem from="1689846962456" duration="12241000" />
       <workItem from="1690182488496" duration="9670000" />
-      <workItem from="1690792305195" duration="1449000" />
+      <workItem from="1690792305195" duration="2206000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1689581494348</created>
@@ -168,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690365521990</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="commited the new_request parameter change">
+      <created>1690800866638</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1690800866638</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,6 +196,7 @@
     <MESSAGE value="first commit" />
     <MESSAGE value="war changed to jar and new post method commit" />
     <MESSAGE value="updated target folder commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated target folder commit" />
+    <MESSAGE value="commited the new_request parameter change" />
+    <option name="LAST_COMMIT_MESSAGE" value="commited the new_request parameter change" />
   </component>
 </project>
